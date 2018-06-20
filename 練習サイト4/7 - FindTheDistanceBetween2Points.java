@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -19,7 +18,6 @@ public class Main {
             sum += Math.pow(p[i] - q[i], 2);
         }
 
-        BigDecimal ans = new BigDecimal(Math.sqrt(sum));
-        System.out.println(ans.setScale(2, BigDecimal.ROUND_HALF_UP));
+        System.out.printf("%.2f\n", Math.sqrt(sum));
     }
 }
